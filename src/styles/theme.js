@@ -9,7 +9,7 @@ export default {
     PINK: '#EECF6D',
     RED: '#FF002E',
     BLACK: '#0D0C0F',
-
+    DARK_GRAY: '#282124',
     GRAY_100: '#999591',
     GRAY_300: '#666360',
   },

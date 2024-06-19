@@ -18,6 +18,11 @@ export default createGlobalStyle`
   font-size: 16px;
   outline: none;
 }
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px ${({ theme }) => theme.COLORS.BACKGROUND_800} inset !important;
+    -webkit-text-fill-color: white !important;
+}
 &::-webkit-scrollbar {
       width: 8px;
     }

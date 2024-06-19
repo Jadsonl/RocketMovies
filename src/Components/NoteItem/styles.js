@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.span`
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  background-color: ${({ theme }) => theme.COLORS.DARK_GRAY};
 
   font-size: 12px;
   padding: 5px 14px;

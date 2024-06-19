@@ -8,7 +8,7 @@ export const Container = styled.div`
 `
 export const Form = styled.form`
   padding: 0 136px;
-
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
