@@ -7,8 +7,13 @@ export const Container = styled.div`
     width: 100%;
     height: 144px;
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-
-    a {
+  }
+  @media (max-width: 768px) {
+    > header {
+      > a {
+        justify-content: flex-end;
+        padding: 1rem;
+      }
     }
   }
 `
@@ -60,5 +65,15 @@ export const Avatar = styled.div`
   }
   > input {
     display: none;
+  }
+
+  @media (max-width: 768px) {
+    width: 140px;
+    height: 140px;
+
+    > img {
+      width: 140px;
+      height: 140px;
+    }
   }
 `

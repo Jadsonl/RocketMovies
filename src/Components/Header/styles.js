@@ -19,6 +19,14 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.COLORS.PINK};
     }
   }
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+    gap: 0;
+    div {
+      display: none;
+    }
+  }
 `
 export const Profile = styled.span`
   flex: 2;
@@ -50,5 +58,8 @@ export const Profile = styled.span`
       height: 64px;
       border-radius: 50%;
     }
+  }
+  @media (max-width: 768px) {
+    justify-content: flex-end;
   }
 `

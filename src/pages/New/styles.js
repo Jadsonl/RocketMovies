@@ -23,6 +23,12 @@ export const Container = styled.div`
       margin: 40px 0 24px;
     }
   }
+
+  @media (max-width: 768px) {
+    > main {
+      padding: 1rem;
+    }
+  }
 `
 export const Link = styled.a`
   color: ${({ theme }) => theme.COLORS.PINK};
@@ -40,6 +46,27 @@ export const Form = styled.form`
     'textarea textarea'
     'marcador marcador'
     'buttonDelete button';
+
+  @media (max-width: 768px) {
+    gap: 20px;
+
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    div {
+      gap: 10px;
+    }
+
+    grid-template-areas:
+      'input'
+      'input'
+      'textarea'
+      'marcador'
+      'buttonDelete'
+      'button';
+  }
 `
 export const Textarea = styled.textarea`
   grid-area: textarea;

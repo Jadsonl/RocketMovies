@@ -26,5 +26,18 @@ export const Container = styled.div`
     div {
       gap: 20px;
     }
+
+    @media (max-width: 768px) {
+      padding: 20px;
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      div {
+        gap: 10px;
+      }
+    }
   }
 `
