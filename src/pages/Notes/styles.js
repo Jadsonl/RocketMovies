@@ -8,6 +8,9 @@ export const Container = styled.div`
 export const Main = styled.main`
   padding: 47px 123px 0 106px;
   overflow-y: auto;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
   > h1 {
     font-size: 36px;
   }
@@ -38,6 +41,9 @@ export const InfoUser = styled.div`
   align-items: center;
   gap: 8px;
   margin-bottom: 40px;
+  @media (max-width: 768px) {
+    gap: 3px;
+  }
 `
 export const Tags = styled.div``
 export const Description = styled.div`
